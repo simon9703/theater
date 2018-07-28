@@ -15,7 +15,7 @@ mybatis:
 
 logging:
   level:
-    root: warn
+    root: debug
   file: ./log/zsm.log
 
 
