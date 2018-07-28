@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    username: root
+    password: zsm
+    url: jdbc:mysql://localhost:3306/flavor?useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+mybatis:
+  mapper-locations:
+
+logging:
+  level:
+    root: warn
+  file: ./log/zsm.log
+
+
+
+

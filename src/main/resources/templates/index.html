@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:text="${welcome}"></h1>
+
+    <hr>
+
+    <table>
+
+        <thead>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>爱好</th>
+            <th>年龄</th>
+        </thead>
+
+        <tr th:each="people : ${peopleList}">
+            <th th:text="${people.id}"></th>
+            <th th:text="${people.name}"></th>
+            <th th:text="${people.interest}"></th>
+            <th th:text="${people.age}"></th>
+        </tr>
+
+    </table>
+</body>
+</html>
