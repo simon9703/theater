@@ -1,7 +1,7 @@
 package com.apache.zsm.flavor.service;
 
 import com.apache.zsm.flavor.domain.People;
-import com.apache.zsm.flavor.repository.PeopleMapper;
+import com.apache.zsm.flavor.dao.PeopleMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,12 +20,12 @@ public class PeopleService {
         return peopleDao.findAll();
     }
 
-    public int addPeople(People people) {
-        return peopleDao.add(people);
+    public int addOne(People people) {
+        return peopleDao.addOne(people);
     }
 
     public int updateById(People people) {
-        return peopleDao.updateById(people.getId(), people.getInterest());
+        return peopleDao.updateById(people);
     }
 
     public int deleteById(int id) {

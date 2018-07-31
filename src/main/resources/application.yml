@@ -4,9 +4,36 @@ spring:
     password: zsm
     url: jdbc:mysql://localhost:3306/flavor?useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 初始化大小，最小，最大
+      initial-size: 1
+      min-idle: 10
+      max-active: 20
+      # 获取连接超时
+      max-wait: 60000
+      # 间隔检测关闭空闲连接
+      time-between-eviction-runs-millis: 60000
+      #检测连接是否有效
+      validation-query: select 1 from dual
+      test-while-idle: true
+      test-on-borrow: false # 申请连接时检测
+      test-on-return: false # 归还连接时检测
+      # 缓存preparedStatements，指定每个连接缓存ps大小
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      # 配置监控统计拦截。监控统计用:stat、日志用log4j、防御sql注入wall
+      filters: stat,wall
+      # 打开mergeSql和慢sql记录
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      # 合并多个DruidDatasource监控数据
+      use-global-data-source-stat: true
+
+  thymeleaf:
+    cache: false
 
 server:
-  port: 8080
+  port: 80
   servlet:
     context-path: /
 
@@ -15,7 +42,8 @@ mybatis:
 
 logging:
   level:
-    root: debug
+    root: warn
+    com.apache.zsm.flavor.dao: trace #打印日志
   file: ./log/zsm.log
 
 

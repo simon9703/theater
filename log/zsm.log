@@ -1,1 +1,1495 @@
-2018-07-28 22:09:42.460 ERROR 17860 --- [http-nio-8080-exec-2] zsm                                      : Find an error in loading mybatis!
+2018-07-31 07:55:19.639 DEBUG 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 07:55:19.726 DEBUG 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 07:55:19.738 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 07:55:19.739 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 07:55:19.741 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 8, 张思蒙88, 看电影, 25.6
+2018-07-31 07:55:19.742 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看书, 36
+2018-07-31 07:55:19.742 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 07:55:19.743 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 07:55:19.743 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 07:55:19.743 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 13, 张思蒙33, 游泳, 12.1
+2018-07-31 07:55:19.743 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 14, 张思蒙44, 看电影, 25.6
+2018-07-31 07:55:19.744 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 36
+2018-07-31 07:55:19.744 DEBUG 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 9
+2018-07-31 08:00:20.997 DEBUG 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==>  Preparing: select * from people where id=? 
+2018-07-31 08:00:21.020 DEBUG 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==> Parameters: 15(Integer)
+2018-07-31 08:00:21.024 TRACE 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==    Columns: id, name, interest, age
+2018-07-31 08:00:21.024 TRACE 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==        Row: 15, 张思蒙55, 看书, 36
+2018-07-31 08:00:21.025 DEBUG 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==      Total: 1
+2018-07-31 08:00:26.246 DEBUG 12012 --- [http-nio-80-exec-3] c.a.z.f.dao.PeopleMapper.updateById      : ==>  Preparing: update people set name=?,interest=?,age=? where id=? 
+2018-07-31 08:00:26.251 DEBUG 12012 --- [http-nio-80-exec-3] c.a.z.f.dao.PeopleMapper.updateById      : ==> Parameters: 张思蒙55(String), 看书(String), 33.3(Double), 15(Integer)
+2018-07-31 08:00:26.259 DEBUG 12012 --- [http-nio-80-exec-3] c.a.z.f.dao.PeopleMapper.updateById      : <==    Updates: 1
+2018-07-31 08:00:26.267 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:00:26.267 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:00:26.268 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:00:26.268 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:00:26.268 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 8, 张思蒙88, 看电影, 25.6
+2018-07-31 08:00:26.268 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看书, 36
+2018-07-31 08:00:26.269 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:00:26.269 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:00:26.269 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:00:26.270 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 13, 张思蒙33, 游泳, 12.1
+2018-07-31 08:00:26.270 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 14, 张思蒙44, 看电影, 25.6
+2018-07-31 08:00:26.270 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 33.3
+2018-07-31 08:00:26.270 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 9
+2018-07-31 08:00:31.442 DEBUG 12012 --- [http-nio-80-exec-10] c.a.z.f.dao.PeopleMapper.deleteById      : ==>  Preparing: delete from people where id=? 
+2018-07-31 08:00:31.443 DEBUG 12012 --- [http-nio-80-exec-10] c.a.z.f.dao.PeopleMapper.deleteById      : ==> Parameters: 14(Integer)
+2018-07-31 08:00:31.446 DEBUG 12012 --- [http-nio-80-exec-10] c.a.z.f.dao.PeopleMapper.deleteById      : <==    Updates: 1
+2018-07-31 08:00:31.450 DEBUG 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:00:31.451 DEBUG 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:00:31.451 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:00:31.451 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:00:31.452 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 8, 张思蒙88, 看电影, 25.6
+2018-07-31 08:00:31.452 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看书, 36
+2018-07-31 08:00:31.452 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:00:31.452 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:00:31.452 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:00:31.454 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 13, 张思蒙33, 游泳, 12.1
+2018-07-31 08:00:31.455 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 33.3
+2018-07-31 08:00:31.456 DEBUG 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 8
+2018-07-31 08:00:45.073 DEBUG 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==>  Preparing: select * from people where id=? 
+2018-07-31 08:00:45.074 DEBUG 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==> Parameters: 9(Integer)
+2018-07-31 08:00:45.074 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==    Columns: id, name, interest, age
+2018-07-31 08:00:45.075 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==        Row: 9, 张思蒙99, 看书, 36
+2018-07-31 08:00:45.075 DEBUG 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==      Total: 1
+2018-07-31 08:00:53.478 DEBUG 12012 --- [http-nio-80-exec-4] c.a.z.f.dao.PeopleMapper.updateById      : ==>  Preparing: update people set name=?,interest=?,age=? where id=? 
+2018-07-31 08:00:53.479 DEBUG 12012 --- [http-nio-80-exec-4] c.a.z.f.dao.PeopleMapper.updateById      : ==> Parameters: 张思蒙99(String), 看漫画(String), 36.0(Double), 9(Integer)
+2018-07-31 08:00:53.505 DEBUG 12012 --- [http-nio-80-exec-4] c.a.z.f.dao.PeopleMapper.updateById      : <==    Updates: 1
+2018-07-31 08:00:53.512 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:00:53.512 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:00:53.513 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:00:53.513 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:00:53.513 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 8, 张思蒙88, 看电影, 25.6
+2018-07-31 08:00:53.514 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:00:53.514 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:00:53.514 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:00:53.514 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:00:53.515 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 13, 张思蒙33, 游泳, 12.1
+2018-07-31 08:00:53.515 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 33.3
+2018-07-31 08:00:53.515 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 8
+2018-07-31 08:00:56.090 DEBUG 12012 --- [http-nio-80-exec-6] c.a.z.f.dao.PeopleMapper.deleteById      : ==>  Preparing: delete from people where id=? 
+2018-07-31 08:00:56.090 DEBUG 12012 --- [http-nio-80-exec-6] c.a.z.f.dao.PeopleMapper.deleteById      : ==> Parameters: 13(Integer)
+2018-07-31 08:00:56.124 DEBUG 12012 --- [http-nio-80-exec-6] c.a.z.f.dao.PeopleMapper.deleteById      : <==    Updates: 1
+2018-07-31 08:00:56.129 DEBUG 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:00:56.129 DEBUG 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:00:56.129 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:00:56.129 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:00:56.130 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 8, 张思蒙88, 看电影, 25.6
+2018-07-31 08:00:56.130 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:00:56.130 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:00:56.130 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:00:56.130 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:00:56.130 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 33.3
+2018-07-31 08:00:56.130 DEBUG 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:09:26.537 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:09:26.538 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:09:26.539 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:09:26.539 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:09:26.539 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 8, 张思蒙88, 看电影, 25.6
+2018-07-31 08:09:26.539 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:09:26.539 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:09:26.540 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:09:26.540 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:09:26.540 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 33.3
+2018-07-31 08:09:26.540 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:09:47.120 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:09:47.122 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:09:47.124 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:09:47.124 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:09:47.124 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 8, 张思蒙88, 看电影, 25.6
+2018-07-31 08:09:47.124 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:09:47.124 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:09:47.125 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:09:47.125 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:09:47.125 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 33.3
+2018-07-31 08:09:47.125 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:17:54.841 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat:j2eeType=WebModule,name=//localhost/*,J2EEApplication=none,J2EEServer=none
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:905) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6275) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:j2eeType=WebModule,name=//localhost/*,J2EEApplication=none,J2EEServer=none
+	... 19 common frames omitted
+
+2018-07-31 08:17:54.842  WARN 12012 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[/*]] with name [Tomcat:j2eeType=WebModule,name=//localhost/*,J2EEApplication=none,J2EEServer=none] during component initialisation
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:905) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6275) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:j2eeType=WebModule,name=//localhost/*,J2EEApplication=none,J2EEServer=none
+	... 19 common frames omitted
+
+2018-07-31 08:17:54.845  WARN 12012 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Failed to create work directory [C:\Users\simon\AppData\Local\Temp\tomcat.4464024936325693866.80\work\Tomcat\localhost\*] for context [/*]
+2018-07-31 08:17:54.846 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat:type=WebResourceRoot,host=localhost,context=/*
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:678) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:type=WebResourceRoot,host=localhost,context=/*
+	... 21 common frames omitted
+
+2018-07-31 08:17:54.846  WARN 12012 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.StandardRoot@42f97cc3] with name [Tomcat:type=WebResourceRoot,host=localhost,context=/*] during component initialisation
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:678) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:type=WebResourceRoot,host=localhost,context=/*
+	... 21 common frames omitted
+
+2018-07-31 08:17:54.850 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat:type=WebResourceRoot,host=localhost,context=/*,name=Cache
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:680) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:type=WebResourceRoot,host=localhost,context=/*,name=Cache
+	... 20 common frames omitted
+
+2018-07-31 08:17:54.850  WARN 12012 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.Cache@5894d5e1] with name [Tomcat:type=WebResourceRoot,host=localhost,context=/*,name=Cache] during component initialisation
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:680) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:type=WebResourceRoot,host=localhost,context=/*,name=Cache
+	... 20 common frames omitted
+
+2018-07-31 08:17:54.857 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat:type=Loader,host=localhost,context=/*
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:type=Loader,host=localhost,context=/*
+	... 19 common frames omitted
+
+2018-07-31 08:17:54.858  WARN 12012 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [WebappLoader[/*]] with name [Tomcat:type=Loader,host=localhost,context=/*] during component initialisation
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:type=Loader,host=localhost,context=/*
+	... 19 common frames omitted
+
+2018-07-31 08:17:54.862 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat:type=TomcatEmbeddedWebappClassLoader,host=localhost,context=/*
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:type=TomcatEmbeddedWebappClassLoader,host=localhost,context=/*
+	... 17 common frames omitted
+
+2018-07-31 08:17:54.863 ERROR 12012 --- [localhost-startStop-1] org.apache.catalina.loader.WebappLoader  : LifecycleException 
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:411) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:type=TomcatEmbeddedWebappClassLoader,host=localhost,context=/*
+	... 17 common frames omitted
+
+2018-07-31 08:17:54.864 ERROR 12012 --- [Tomcat-startStop-1] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[/*]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_121]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [na:1.8.0_121]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[/*]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [WebappLoader[/*]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:418) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 8 common frames omitted
+Caused by: javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:411) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 9 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat:type=TomcatEmbeddedWebappClassLoader,host=localhost,context=/*
+	... 17 common frames omitted
+
+2018-07-31 08:17:54.866 ERROR 12012 --- [restartedMain] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:1.8.0_121]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[na:1.8.0_121]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:367) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:107) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:413) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at com.apache.zsm.flavor.FlavorApplication.main(FlavorApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:949) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 6 common frames omitted
+
+2018-07-31 08:17:54.869  WARN 12012 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2018-07-31 08:17:54.879 ERROR 12012 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at com.apache.zsm.flavor.FlavorApplication.main(FlavorApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:413) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	... 13 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:367) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:107) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	... 18 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 20 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 22 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:949) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 24 common frames omitted
+
+2018-07-31 08:18:09.787 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat-1:j2eeType=WebModule,name=//localhost/*,J2EEApplication=none,J2EEServer=none
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:905) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6275) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:j2eeType=WebModule,name=//localhost/*,J2EEApplication=none,J2EEServer=none
+	... 19 common frames omitted
+
+2018-07-31 08:18:09.788  WARN 12012 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [StandardEngine[Tomcat-1].StandardHost[localhost].TomcatEmbeddedContext[/*]] with name [Tomcat-1:j2eeType=WebModule,name=//localhost/*,J2EEApplication=none,J2EEServer=none] during component initialisation
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:905) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6275) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:j2eeType=WebModule,name=//localhost/*,J2EEApplication=none,J2EEServer=none
+	... 19 common frames omitted
+
+2018-07-31 08:18:09.790  WARN 12012 --- [localhost-startStop-1] o.apache.catalina.core.StandardContext   : Failed to create work directory [C:\Users\simon\AppData\Local\Temp\tomcat.3370550398951172299.80\work\Tomcat-1\localhost\*] for context [/*]
+2018-07-31 08:18:09.791 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat-1:type=WebResourceRoot,host=localhost,context=/*
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:678) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:type=WebResourceRoot,host=localhost,context=/*
+	... 21 common frames omitted
+
+2018-07-31 08:18:09.791  WARN 12012 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.StandardRoot@4978e69e] with name [Tomcat-1:type=WebResourceRoot,host=localhost,context=/*] during component initialisation
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:678) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:type=WebResourceRoot,host=localhost,context=/*
+	... 21 common frames omitted
+
+2018-07-31 08:18:09.792 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat-1:type=WebResourceRoot,host=localhost,context=/*,name=Cache
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:680) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:type=WebResourceRoot,host=localhost,context=/*,name=Cache
+	... 20 common frames omitted
+
+2018-07-31 08:18:09.792  WARN 12012 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [org.apache.catalina.webresources.Cache@47bf01c1] with name [Tomcat-1:type=WebResourceRoot,host=localhost,context=/*,name=Cache] during component initialisation
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.webresources.StandardRoot.initInternal(StandardRoot.java:680) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:type=WebResourceRoot,host=localhost,context=/*,name=Cache
+	... 20 common frames omitted
+
+2018-07-31 08:18:09.801 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat-1:type=Loader,host=localhost,context=/*
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:type=Loader,host=localhost,context=/*
+	... 19 common frames omitted
+
+2018-07-31 08:18:09.801  WARN 12012 --- [localhost-startStop-1] o.a.catalina.util.LifecycleMBeanBase     : Failed to register object [WebappLoader[/*]] with name [Tomcat-1:type=Loader,host=localhost,context=/*] during component initialisation
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:161) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:type=Loader,host=localhost,context=/*
+	... 19 common frames omitted
+
+2018-07-31 08:18:09.807 ERROR 12012 --- [localhost-startStop-1] org.apache.tomcat.util.modeler.Registry  : Error registering Tomcat-1:type=TomcatEmbeddedWebappClassLoader,host=localhost,context=/*
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:type=TomcatEmbeddedWebappClassLoader,host=localhost,context=/*
+	... 17 common frames omitted
+
+2018-07-31 08:18:09.808 ERROR 12012 --- [localhost-startStop-1] org.apache.catalina.loader.WebappLoader  : LifecycleException 
+
+javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:411) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:type=TomcatEmbeddedWebappClassLoader,host=localhost,context=/*
+	... 17 common frames omitted
+
+2018-07-31 08:18:09.813 ERROR 12012 --- [Tomcat-1-startStop-1] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat-1].StandardHost[localhost].TomcatEmbeddedContext[/*]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) [na:1.8.0_121]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) [na:1.8.0_121]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat-1].StandardHost[localhost].TomcatEmbeddedContext[/*]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [WebappLoader[/*]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5104) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 6 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: start: 
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:418) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 8 common frames omitted
+Caused by: javax.management.RuntimeOperationsException: null
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:413) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_121]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_121]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.modeler.Registry.registerComponent(Registry.java:634) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.loader.WebappLoader.startInternal(WebappLoader.java:411) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 9 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Repository: cannot add mbean for pattern name Tomcat-1:type=TomcatEmbeddedWebappClassLoader,host=localhost,context=/*
+	... 17 common frames omitted
+
+2018-07-31 08:18:09.815 ERROR 12012 --- [restartedMain] org.apache.catalina.core.ContainerBase   : A child container failed during start
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat-1].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:1.8.0_121]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[na:1.8.0_121]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:367) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:107) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:413) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at com.apache.zsm.flavor.FlavorApplication.main(FlavorApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat-1].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_121]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:949) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 6 common frames omitted
+
+2018-07-31 08:18:09.818  WARN 12012 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2018-07-31 08:18:09.823 ERROR 12012 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:155) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) ~[spring-context-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at com.apache.zsm.flavor.FlavorApplication.main(FlavorApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:126) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:413) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	... 13 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardServer[-1]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:367) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:107) ~[spring-boot-2.0.3.RELEASE.jar:2.0.3.RELEASE]
+	... 18 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 20 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Tomcat-1]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 22 common frames omitted
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:949) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 24 common frames omitted
+
+2018-07-31 08:18:35.099 DEBUG 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:18:35.100 DEBUG 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:18:35.101 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:18:35.101 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:18:35.101 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 8, 张思蒙88, 看电影, 25.6
+2018-07-31 08:18:35.101 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:18:35.101 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:18:35.101 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:18:35.101 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:18:35.102 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 33.3
+2018-07-31 08:18:35.102 DEBUG 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:18:46.482 DEBUG 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==>  Preparing: select * from people where id=? 
+2018-07-31 08:18:46.484 DEBUG 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==> Parameters: 15(Integer)
+2018-07-31 08:18:46.484 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==    Columns: id, name, interest, age
+2018-07-31 08:18:46.484 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==        Row: 15, 张思蒙55, 看书, 33.3
+2018-07-31 08:18:46.485 DEBUG 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==      Total: 1
+2018-07-31 08:18:54.417 DEBUG 12012 --- [http-nio-80-exec-9] c.a.z.f.dao.PeopleMapper.updateById      : ==>  Preparing: update people set name=?,interest=?,age=? where id=? 
+2018-07-31 08:18:54.418 DEBUG 12012 --- [http-nio-80-exec-9] c.a.z.f.dao.PeopleMapper.updateById      : ==> Parameters: 张思蒙55(String), 看书(String), 27.2(Double), 15(Integer)
+2018-07-31 08:18:54.439 DEBUG 12012 --- [http-nio-80-exec-9] c.a.z.f.dao.PeopleMapper.updateById      : <==    Updates: 1
+2018-07-31 08:18:54.444 DEBUG 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:18:54.444 DEBUG 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:18:54.445 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:18:54.445 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:18:54.445 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 8, 张思蒙88, 看电影, 25.6
+2018-07-31 08:18:54.445 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:18:54.445 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:18:54.445 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:18:54.445 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:18:54.446 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:18:54.446 DEBUG 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:19:08.048 DEBUG 12012 --- [http-nio-80-exec-4] c.a.z.f.dao.PeopleMapper.deleteById      : ==>  Preparing: delete from people where id=? 
+2018-07-31 08:19:08.049 DEBUG 12012 --- [http-nio-80-exec-4] c.a.z.f.dao.PeopleMapper.deleteById      : ==> Parameters: 8(Integer)
+2018-07-31 08:19:08.080 DEBUG 12012 --- [http-nio-80-exec-4] c.a.z.f.dao.PeopleMapper.deleteById      : <==    Updates: 1
+2018-07-31 08:19:08.086 DEBUG 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:19:08.087 DEBUG 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:19:08.087 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:19:08.087 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:19:08.090 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:19:08.090 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:19:08.090 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:19:08.090 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:19:08.090 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:19:08.091 DEBUG 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:21:37.550 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:21:37.550 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:21:37.551 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:21:37.551 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:21:37.551 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:21:37.551 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:21:37.551 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:21:37.551 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:21:37.551 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:21:37.551 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:26:56.599 DEBUG 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:26:56.600 DEBUG 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:26:56.601 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:26:56.601 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:26:56.601 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:26:56.601 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:26:56.601 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:26:56.601 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:26:56.601 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:26:56.601 DEBUG 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:26:57.205 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:26:57.206 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:26:57.209 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:26:57.209 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:26:57.209 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:26:57.209 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:26:57.209 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:26:57.209 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:26:57.209 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:26:57.210 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:31:09.079 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:31:09.080 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:31:09.081 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:31:09.081 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:31:09.081 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:31:09.081 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:31:09.081 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:31:09.082 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:31:09.082 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:31:09.082 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:37:09.666 DEBUG 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:37:09.667 DEBUG 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:37:09.668 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:37:09.668 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:37:09.668 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:37:09.669 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:37:09.669 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:37:09.669 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:37:09.669 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:37:09.669 DEBUG 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:37:26.413 DEBUG 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:37:26.415 DEBUG 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:37:26.416 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:37:26.416 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:37:26.416 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:37:26.416 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:37:26.416 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:37:26.416 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:37:26.416 TRACE 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:37:26.416 DEBUG 12012 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:37:50.003 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:37:50.004 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:37:50.005 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:37:50.005 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:37:50.006 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:37:50.006 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:37:50.006 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:37:50.007 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:37:50.008 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:37:50.008 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:38:18.951 DEBUG 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:38:18.951 DEBUG 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:38:18.952 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:38:18.952 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:38:18.952 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:38:18.952 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:38:18.952 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:38:18.952 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:38:18.953 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:38:18.953 DEBUG 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:38:24.423 DEBUG 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:38:24.423 DEBUG 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:38:24.424 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:38:24.424 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:38:24.424 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:38:24.425 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:38:24.425 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:38:24.425 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:38:24.425 TRACE 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:38:24.425 DEBUG 12012 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:38:25.220 DEBUG 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:38:25.220 DEBUG 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:38:25.220 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:38:25.220 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:38:25.220 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:38:25.221 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:38:25.221 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:38:25.221 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:38:25.221 TRACE 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:38:25.221 DEBUG 12012 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:38:25.748 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:38:25.748 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:38:25.749 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:38:25.749 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:38:25.749 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:38:25.749 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:38:25.749 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:38:25.750 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:38:25.750 TRACE 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:38:25.750 DEBUG 12012 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:38:41.635 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:38:41.636 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:38:41.636 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:38:41.636 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:38:41.636 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:38:41.636 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:38:41.636 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:38:41.636 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:38:41.636 TRACE 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:38:41.637 DEBUG 12012 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:38:57.167 DEBUG 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:38:57.167 DEBUG 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:38:57.168 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:38:57.168 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:38:57.168 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:38:57.168 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:38:57.168 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:38:57.168 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:38:57.168 TRACE 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:38:57.168 DEBUG 12012 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:38:59.245 DEBUG 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:38:59.246 DEBUG 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:38:59.246 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:38:59.246 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:38:59.246 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:38:59.247 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:38:59.247 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:38:59.247 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:38:59.247 TRACE 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:38:59.247 DEBUG 12012 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:39:00.559 DEBUG 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:39:00.559 DEBUG 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:39:00.560 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:39:00.560 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:39:00.560 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:39:00.560 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:39:00.560 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:39:00.560 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:39:00.560 TRACE 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:39:00.560 DEBUG 12012 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:39:13.619 DEBUG 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:39:13.620 DEBUG 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:39:13.620 TRACE 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:39:13.620 TRACE 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:39:13.620 TRACE 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:39:13.620 TRACE 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:39:13.620 TRACE 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:39:13.621 TRACE 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:39:13.621 TRACE 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:39:13.621 DEBUG 12012 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:39:14.389 DEBUG 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:39:14.389 DEBUG 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:39:14.390 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:39:14.390 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:39:14.390 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:39:14.390 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:39:14.390 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:39:14.390 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:39:14.390 TRACE 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:39:14.390 DEBUG 12012 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:40:50.245 DEBUG 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:40:50.342 DEBUG 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:40:50.360 TRACE 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:40:50.360 TRACE 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:40:50.363 TRACE 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:40:50.365 TRACE 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:40:50.366 TRACE 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:40:50.367 TRACE 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:40:50.369 TRACE 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:40:50.369 DEBUG 15756 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:42:24.824 DEBUG 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:42:24.825 DEBUG 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:42:24.825 TRACE 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:42:24.826 TRACE 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:42:24.826 TRACE 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:42:24.826 TRACE 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:42:24.827 TRACE 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:42:24.827 TRACE 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:42:24.827 TRACE 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:42:24.827 DEBUG 15756 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:42:35.351 DEBUG 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:42:35.351 DEBUG 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:42:35.352 TRACE 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:42:35.353 TRACE 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:42:35.354 TRACE 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:42:35.354 TRACE 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:42:35.354 TRACE 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:42:35.356 TRACE 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:42:35.357 TRACE 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:42:35.357 DEBUG 15756 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:42:47.331 DEBUG 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:42:47.332 DEBUG 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:42:47.333 TRACE 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:42:47.333 TRACE 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:42:47.333 TRACE 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:42:47.333 TRACE 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:42:47.333 TRACE 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:42:47.334 TRACE 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:42:47.334 TRACE 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:42:47.334 DEBUG 15756 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 6
+2018-07-31 08:43:03.593 DEBUG 15756 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.addOne   : ==>  Preparing: insert into people value(null,?,?,?) 
+2018-07-31 08:43:03.618 DEBUG 15756 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.addOne   : ==> Parameters: 张思蒙(String), 上学(String), 14.0(Double)
+2018-07-31 08:43:03.623 DEBUG 15756 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.addOne   : <==    Updates: 1
+2018-07-31 08:43:28.246 DEBUG 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:43:28.247 DEBUG 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:43:28.249 TRACE 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:43:28.249 TRACE 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:43:28.250 TRACE 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:43:28.250 TRACE 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:43:28.251 TRACE 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:43:28.251 TRACE 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:43:28.251 TRACE 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:43:28.252 TRACE 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:43:28.252 DEBUG 15756 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:43:35.445 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:43:35.524 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:43:35.538 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:43:35.538 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:43:35.539 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:43:35.540 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:43:35.540 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:43:35.541 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:43:35.541 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:43:35.541 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:43:35.542 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:45:00.584 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:45:00.584 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:45:00.585 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:45:00.585 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:45:00.586 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:45:00.586 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:45:00.586 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:45:00.586 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:45:00.586 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:45:00.587 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:45:00.587 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:45:30.561 DEBUG 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:45:30.561 DEBUG 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:45:30.562 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:45:30.562 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:45:30.563 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:45:30.564 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:45:30.565 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:45:30.565 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:45:30.566 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:45:30.566 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:45:30.566 DEBUG 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:45:32.884 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:45:32.884 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:45:32.885 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:45:32.885 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:45:32.885 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:45:32.885 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:45:32.886 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:45:32.886 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:45:32.886 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:45:32.886 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:45:32.886 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:45:34.372 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:45:34.372 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:45:34.373 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:45:34.373 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:45:34.374 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:45:34.374 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:45:34.374 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:45:34.375 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:45:34.375 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:45:34.375 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:45:34.375 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:45:34.572 DEBUG 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:45:34.572 DEBUG 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:45:34.573 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:45:34.574 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:45:34.574 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:45:34.574 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:45:34.574 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:45:34.574 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:45:34.575 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:45:34.575 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:45:34.575 DEBUG 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:45:34.763 DEBUG 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:45:34.764 DEBUG 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:45:34.764 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:45:34.764 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:45:34.765 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:45:34.765 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:45:34.765 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:45:34.765 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:45:34.766 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:45:34.766 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:45:34.766 DEBUG 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:45:35.516 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:45:35.516 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:45:35.517 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:45:35.517 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:45:35.518 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:45:35.518 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:45:35.518 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:45:35.518 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:45:35.518 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:45:35.518 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:45:35.518 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:45:35.758 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:45:35.758 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:45:35.759 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:45:35.759 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:45:35.759 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:45:35.760 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:45:35.760 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:45:35.760 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:45:35.760 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:45:35.760 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:45:35.760 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:48:40.102 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:48:40.102 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:48:40.103 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:48:40.103 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:48:40.103 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:48:40.104 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:48:40.104 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:48:40.104 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:48:40.104 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:48:40.104 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:48:40.104 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:48:40.859 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:48:40.860 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:48:40.861 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:48:40.861 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:48:40.861 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:48:40.861 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:48:40.861 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:48:40.862 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:48:40.862 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:48:40.862 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:48:40.862 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:48:46.252 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:48:46.252 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:48:46.253 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:48:46.253 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:48:46.253 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:48:46.253 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:48:46.253 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:48:46.254 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:48:46.254 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:48:46.254 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:48:46.254 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 08:48:46.764 DEBUG 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 08:48:46.765 DEBUG 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 08:48:46.766 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 08:48:46.766 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 08:48:46.766 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 08:48:46.766 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 08:48:46.766 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 08:48:46.766 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 08:48:46.766 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 08:48:46.766 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 08:48:46.766 DEBUG 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 09:03:06.670 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:03:06.671 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:03:06.674 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:03:06.675 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:03:06.675 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:03:06.675 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:03:06.675 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:03:06.676 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:03:06.676 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:03:06.676 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:03:06.676 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 09:03:19.971 DEBUG 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:03:19.971 DEBUG 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:03:19.972 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:03:19.972 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:03:19.972 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:03:19.972 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:03:19.972 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:03:19.973 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:03:19.973 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:03:19.973 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:03:19.974 DEBUG 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 09:03:19.990 DEBUG 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:03:19.990 DEBUG 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:03:19.991 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:03:19.992 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:03:19.992 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:03:19.992 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:03:19.992 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:03:19.992 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:03:19.992 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:03:19.992 TRACE 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:03:19.992 DEBUG 11908 --- [http-nio-80-exec-4] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 7
+2018-07-31 09:03:20.036 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.addOne   : ==>  Preparing: insert into people value(null,?,?,?) 
+2018-07-31 09:03:20.052 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.addOne   : ==> Parameters: 张思蒙(String), 写字(String), 25.0(Double)
+2018-07-31 09:03:20.060 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.addOne   : <==    Updates: 1
+2018-07-31 09:03:22.052 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:03:22.052 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:03:22.053 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:03:22.053 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:03:22.053 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:03:22.053 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:03:22.053 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:03:22.054 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:03:22.054 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:03:22.054 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:03:22.054 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:03:22.054 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 8
+2018-07-31 09:04:08.762 DEBUG 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:04:08.763 DEBUG 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:04:08.763 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:04:08.764 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:04:08.764 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:04:08.764 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:04:08.764 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:04:08.764 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:04:08.764 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:04:08.764 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:04:08.765 TRACE 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:04:08.765 DEBUG 11908 --- [http-nio-80-exec-10] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 8
+2018-07-31 09:04:27.388 DEBUG 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:04:27.389 DEBUG 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:04:27.389 TRACE 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:04:27.389 TRACE 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:04:27.390 TRACE 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:04:27.390 TRACE 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:04:27.390 TRACE 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:04:27.390 TRACE 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:04:27.390 TRACE 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:04:27.390 TRACE 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:04:27.390 TRACE 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:04:27.391 DEBUG 11908 --- [http-nio-80-exec-3] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 8
+2018-07-31 09:04:27.391 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.addOne   : ==>  Preparing: insert into people value(null,?,?,?) 
+2018-07-31 09:04:27.392 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.addOne   : ==> Parameters: 张思蒙88(String), 读书(String), 16.0(Double)
+2018-07-31 09:04:27.404 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.addOne   : <==    Updates: 1
+2018-07-31 09:04:27.421 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:04:27.424 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:04:27.426 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:04:27.426 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:04:27.426 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:04:27.426 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:04:27.426 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:04:27.426 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:04:27.426 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:04:27.426 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:04:27.426 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:04:27.427 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 18, 张思蒙88, 读书, 16
+2018-07-31 09:04:27.427 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 9
+2018-07-31 09:04:29.792 DEBUG 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:04:29.793 DEBUG 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:04:29.794 TRACE 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 18, 张思蒙88, 读书, 16
+2018-07-31 09:04:29.794 DEBUG 11908 --- [http-nio-80-exec-7] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 9
+2018-07-31 09:04:51.627 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:04:51.629 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:04:51.631 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:04:51.631 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:04:51.631 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:04:51.632 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:04:51.632 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:04:51.632 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:04:51.632 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.addOne   : ==>  Preparing: insert into people value(null,?,?,?) 
+2018-07-31 09:04:51.632 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:04:51.632 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:04:51.633 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.addOne   : ==> Parameters: 张思蒙(String), 散步(String), 8.0(Double)
+2018-07-31 09:04:51.633 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:04:51.633 TRACE 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 18, 张思蒙88, 读书, 16
+2018-07-31 09:04:51.633 DEBUG 11908 --- [http-nio-80-exec-2] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 9
+2018-07-31 09:04:51.643 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:04:51.643 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:04:51.645 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:04:51.645 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:04:51.646 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:04:51.646 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:04:51.646 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:04:51.646 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:04:51.646 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 15, 张思蒙55, 看书, 27.2
+2018-07-31 09:04:51.646 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:04:51.646 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:04:51.646 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 18, 张思蒙88, 读书, 16
+2018-07-31 09:04:51.647 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 19, 张思蒙, 散步, 8
+2018-07-31 09:04:51.647 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 10
+2018-07-31 09:04:51.658 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.addOne   : <==    Updates: 1
+2018-07-31 09:05:47.963 DEBUG 11908 --- [http-nio-80-exec-5] c.a.z.f.dao.PeopleMapper.deleteById      : ==>  Preparing: delete from people where id=? 
+2018-07-31 09:05:47.990 DEBUG 11908 --- [http-nio-80-exec-5] c.a.z.f.dao.PeopleMapper.deleteById      : ==> Parameters: 15(Integer)
+2018-07-31 09:05:47.996 DEBUG 11908 --- [http-nio-80-exec-5] c.a.z.f.dao.PeopleMapper.deleteById      : <==    Updates: 1
+2018-07-31 09:05:48.009 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:05:48.010 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:05:48.010 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:05:48.011 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:05:48.011 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:05:48.011 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:05:48.011 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:05:48.011 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:05:48.011 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:05:48.012 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:05:48.012 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 18, 张思蒙88, 读书, 16
+2018-07-31 09:05:48.012 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 19, 张思蒙, 散步, 8
+2018-07-31 09:05:48.012 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 9
+2018-07-31 09:05:50.861 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==>  Preparing: select * from people where id=? 
+2018-07-31 09:05:50.862 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==> Parameters: 16(Integer)
+2018-07-31 09:05:50.863 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==    Columns: id, name, interest, age
+2018-07-31 09:05:50.863 TRACE 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==        Row: 16, 张思蒙, 上学, 14
+2018-07-31 09:05:50.863 DEBUG 11908 --- [http-nio-80-exec-9] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==      Total: 1
+2018-07-31 09:05:56.249 DEBUG 11908 --- [http-nio-80-exec-3] c.a.z.f.dao.PeopleMapper.updateById      : ==>  Preparing: update people set name=?,interest=?,age=? where id=? 
+2018-07-31 09:05:56.272 DEBUG 11908 --- [http-nio-80-exec-3] c.a.z.f.dao.PeopleMapper.updateById      : ==> Parameters: 张思蒙66(String), 上学(String), 14.0(Double), 16(Integer)
+2018-07-31 09:05:56.282 DEBUG 11908 --- [http-nio-80-exec-3] c.a.z.f.dao.PeopleMapper.updateById      : <==    Updates: 1
+2018-07-31 09:05:56.288 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:05:56.289 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:05:56.291 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:05:56.292 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:05:56.292 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:05:56.292 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:05:56.292 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:05:56.292 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:05:56.292 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙66, 上学, 14
+2018-07-31 09:05:56.293 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:05:56.293 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 18, 张思蒙88, 读书, 16
+2018-07-31 09:05:56.293 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 19, 张思蒙, 散步, 8
+2018-07-31 09:05:56.293 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 9
+2018-07-31 09:05:58.600 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==>  Preparing: select * from people where id=? 
+2018-07-31 09:05:58.600 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==> Parameters: 17(Integer)
+2018-07-31 09:05:58.601 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==    Columns: id, name, interest, age
+2018-07-31 09:05:58.601 TRACE 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==        Row: 17, 张思蒙, 写字, 25
+2018-07-31 09:05:58.601 DEBUG 11908 --- [http-nio-80-exec-1] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==      Total: 1
+2018-07-31 09:06:03.573 DEBUG 11908 --- [http-nio-80-exec-10] c.a.z.f.dao.PeopleMapper.updateById      : ==>  Preparing: update people set name=?,interest=?,age=? where id=? 
+2018-07-31 09:06:03.574 DEBUG 11908 --- [http-nio-80-exec-10] c.a.z.f.dao.PeopleMapper.updateById      : ==> Parameters: 张思蒙77(String), 写字(String), 25.0(Double), 17(Integer)
+2018-07-31 09:06:03.601 DEBUG 11908 --- [http-nio-80-exec-10] c.a.z.f.dao.PeopleMapper.updateById      : <==    Updates: 1
+2018-07-31 09:06:03.607 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:06:03.608 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:06:03.611 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:06:03.611 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:06:03.612 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:06:03.612 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:06:03.612 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:06:03.612 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:06:03.612 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙66, 上学, 14
+2018-07-31 09:06:03.612 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙77, 写字, 25
+2018-07-31 09:06:03.612 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 18, 张思蒙88, 读书, 16
+2018-07-31 09:06:03.612 TRACE 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 19, 张思蒙, 散步, 8
+2018-07-31 09:06:03.612 DEBUG 11908 --- [http-nio-80-exec-5] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 9
+2018-07-31 09:06:04.817 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==>  Preparing: select * from people where id=? 
+2018-07-31 09:06:04.818 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : ==> Parameters: 19(Integer)
+2018-07-31 09:06:04.818 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==    Columns: id, name, interest, age
+2018-07-31 09:06:04.818 TRACE 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==        Row: 19, 张思蒙, 散步, 8
+2018-07-31 09:06:04.819 DEBUG 11908 --- [http-nio-80-exec-8] c.a.zsm.flavor.dao.PeopleMapper.findOne  : <==      Total: 1
+2018-07-31 09:06:18.902 DEBUG 11908 --- [http-nio-80-exec-3] c.a.z.f.dao.PeopleMapper.updateById      : ==>  Preparing: update people set name=?,interest=?,age=? where id=? 
+2018-07-31 09:06:18.903 DEBUG 11908 --- [http-nio-80-exec-3] c.a.z.f.dao.PeopleMapper.updateById      : ==> Parameters: 张思蒙xx(String), 散步(String), 8.4(Double), 19(Integer)
+2018-07-31 09:06:18.932 DEBUG 11908 --- [http-nio-80-exec-3] c.a.z.f.dao.PeopleMapper.updateById      : <==    Updates: 1
+2018-07-31 09:06:18.938 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==>  Preparing: select * from people 
+2018-07-31 09:06:18.939 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : ==> Parameters: 
+2018-07-31 09:06:18.939 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==    Columns: id, name, interest, age
+2018-07-31 09:06:18.941 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 7, 张思蒙77, 游泳, 12.1
+2018-07-31 09:06:18.941 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 9, 张思蒙99, 看漫画, 36
+2018-07-31 09:06:18.941 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 10, 张思蒙00, 看电视, 21.8
+2018-07-31 09:06:18.941 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 11, 张思蒙11, 听音乐, 17.5
+2018-07-31 09:06:18.941 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 12, 张思蒙22, 上上网, 32.9
+2018-07-31 09:06:18.941 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 16, 张思蒙66, 上学, 14
+2018-07-31 09:06:18.941 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 17, 张思蒙77, 写字, 25
+2018-07-31 09:06:18.941 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 18, 张思蒙88, 读书, 16
+2018-07-31 09:06:18.941 TRACE 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==        Row: 19, 张思蒙xx, 散步, 8.4
+2018-07-31 09:06:18.941 DEBUG 11908 --- [http-nio-80-exec-6] c.a.zsm.flavor.dao.PeopleMapper.findAll  : <==      Total: 9
